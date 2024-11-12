@@ -1,0 +1,118 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o estilo geral do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2em;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo do parágrafo com o nome do jogo */
+p {
+    font-size: 1.1em;
+    color: #36989a;
+    margin-bottom: 15px;
+}
+
+/* Estilo dos rótulos */
+label {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Estilo para o input de avaliação */
+input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    font-size: 1em;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    display: block;
+}
+
+/* Estilo para o checkbox de favorito */
+input[type="checkbox"] {
+    margin-top: 10px;
+    transform: scale(1.2);
+}
+
+/* Estilo do botão */
+button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    body {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        width: auto;
+    }
+}
+
+
+.div{
+    background-color: #101422;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.section{
+    display: block;
+}
+
+.return input{
+    border: none;
+    background-color: #0056b3;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}

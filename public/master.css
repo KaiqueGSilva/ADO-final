@@ -1,0 +1,233 @@
+/* master.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f8fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estrutura principal */
+
+section {
+    background-color: #101422;
+    max-width: 80%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+.addProduto, .visuProduto {
+    flex: 1 1 45%;
+    background-color: #a8dce7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.addProduto{
+    max-height: 500px;
+}
+
+h2 {
+    color: #272b3b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulário de adição de produtos */
+.addProduto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addProduto input,
+.addProduto button {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s;
+}
+
+.addProduto input:focus {
+    border-color: #272b3b;
+}
+
+.addProduto button {
+    background-color: #272b3b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.addProduto button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos da tabela */
+.visuProduto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: #272b3b;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+tbody td img {
+    max-width: 80px;
+    border-radius: 4px;
+}
+
+th,
+td {
+    word-wrap: break-word;
+}
+
+td{
+    background-color: #dad5d5;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    table th,
+    table td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    tbody td img {
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    table th,
+    table td {
+        padding: 6px;
+    }
+}
+
+.edit{
+    background-color: green;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.delet{
+    background-color: red;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.delet:hover, .edit:hover{
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+tbody{
+    height: 20px;
+}
+
+
+.return input{
+    border: none;
+    background-color: #0056b3;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 100%;
+}
+
+.teste{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.section-teste{
+    display: block;
+}
+
+.section-user{
+    display: block;
+}
+
+#totalQuantidade{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.title-tela{
+    position: absolute;
+    margin-top: -570px;
+}
+
+.title-tela2{
+    position: absolute;
+    margin-top: -700px;
+}

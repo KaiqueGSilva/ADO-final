@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Usuário</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+
+    <h1 class="title-tela">Seja Bem Vindo</h1>
+
+    <section class="section-user">
+
+        <div class="visuProduto">
+            <h2>Produtos</h2>
+            <table id="informaticaTable">
+                <thead>
+                    <tr>
+                        <th>Nome do Jogo</th>
+                        <th>Preço</th>
+                        <th>Especificações</th>
+                        <th>Quantidade</th>
+                        <th>Imagem</th>
+                        <th>Avaliar</th>
+                    </tr>
+                </thead>
+                <tbody id="informaticaList"></tbody>
+            </table>
+
+            <!-- Exibição do Total de Produtos -->
+            <p id="totalQuantidade"></p>
+        </div>
+
+        <a href="login.html" class="return">
+            <input type="submit" value="Voltar">
+        </a>
+
+    </section>
+
+    <script src="user-prod.js"></script>
+</body>
+</html>

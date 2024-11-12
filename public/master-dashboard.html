@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Master</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+
+    <h1 class="title-tela2">Seja Bem Vindo</h1>
+
+    <section class="section-teste">
+
+        <div class="teste">
+            <div class="addProduto">
+                <h2>Gerenciar Jogos</h2>
+                <form id="informaticaForm">
+                    <input type="text" id="identificacao" placeholder="Nome do Produto" required>
+                    <input type="text" id="preco" placeholder="Preço" required>
+                    <input type="text" id="especificacoes" placeholder="Descrição" required>
+                    <input type="text" id="quantidade" placeholder="Quantidade" required>
+                    <input type="text" id="imagem" placeholder="URL da Imagem" required>
+                    <button type="submit">Adicionar Jogo</button>
+                </form>
+            </div>
+    
+            <div class="visuProduto">
+                <h2>Jogos</h2>
+                <table id="informaticaTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Especificações</th>
+                            <th>Quantidade</th>
+                            <th>Imagem</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="informaticaList"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <a href="login.html" class="return">
+            <input type="submit" value="Voltar">
+        </a>
+    </section>
+
+
+    <script src="informatica.js"></script>
+</body>
+
+</html>
